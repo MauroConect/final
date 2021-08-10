@@ -11,12 +11,12 @@
 		
 		
 		
-		<div align="center" class="registro-box">
-		<h1>Sistema de login</h1>
+		<div align="center" class="formulario">
+		<h1 class="titulo">Ingresar</h1>
 		<form method="POST" action="procesar_formulario.php">
 	
 			
-			<label for="email">Email</label><br/>
+			<label for="email">Usario</label><br/>
 			<input type="text" name="usuario" required="required"><br/>
 			
 			<label for="pass">Contraseña</label><br/>
@@ -25,6 +25,12 @@
 			<input type="submit" value="Enviar" />
 		</form>
 		</div>
+
+		<div>
+        <?php
+        include('includes/footer.php');
+        ?>
+    </div>
 	</body>
 </html>
 

@@ -20,7 +20,7 @@ if (count($productos) <= 0) {
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Todavía no hay productos
+                    Todavía no hay productos, seleccione un destino!!
                 </h1>
                 <h2 class="subtitle">
                     Visita la tienda para agregar productos a tu carrito
@@ -40,7 +40,6 @@ if (count($productos) <= 0) {
                         <th>Descripción</th>
                         <th>Precio</th>
                         <th>Quitar</th>
-                        <th>cantidad</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,7 +63,6 @@ if (count($productos) <= 0) {
                                 </form>
                                 
                             </td>
-                            <td><input action="guardarfecha.php" method="post" type="number" name="cantidad" id="compra"></td>
                         <?php } ?>
                         </tr>
                 </tbody>
@@ -92,6 +90,8 @@ calcularExtra();
 <div class="container-fluid px-1 px-sm-5 mx-auto">
     <div class="row d-flex justify-content-sm-center px-2">
         <form autocomplete="off" action="guardarfecha.php" method="post">
+        <td><input action="guardarfecha.php" method="post" type="number" name="cantidad1" placeholder="Ingrese cantidad de tickets adultos"></td>
+        <td><input action="guardarfecha.php" method="post" type="number" name="cantidad2" placeholder="ingrese cantidad de tickets para niños"></td>
             <div class="form-group row"> <input type="text" id="dp1" class="datepicker mr-2" placeholder="Ingrese la fecha que va a usar el certificado" name="date"><br> <button type="submit" class="btn btn-success">Guardar certificado y finalizar compra</button> </div>
         </form>
     </div>

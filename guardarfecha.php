@@ -13,16 +13,36 @@ echo ($dia);
 
 <?php
 include_once "funciones.php";
+
+$adultos = $_POST['cantidad1'];
+$niños = $_POST['cantidad2'];
+
+
+
 $productos = obtenerProductosEnCarrito();?>
 <p>Usted está autorizado para recorrer los siguientes con las siguientes actividades</p>
-<?php var_dump($productos);
+<?php
+$total=$productos;
+
+var_dump($total);
+
+
+
 ?>
 <br>
 <br>
+<?php
+
+                 
+
+var_dump ($adultos,$niños);
+
+
+?>
 
 
 <?php
-echo "<p>recuerde que tiene un 25% mas los dias lunes y martes</p>";
+echo "<p>recuerde que tiene un 25% de descuento los dias lunes y martes</p>";
 calcularExtra($dia);
 
 ?>
