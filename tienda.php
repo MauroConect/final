@@ -5,7 +5,7 @@ $productos = obtenerProductos();
 ?>
 <div class="columns">
     <div class="column">
-        <h2 class="is-size-2">Tienda</h2>
+        <h2 class="is-size-2">Tienda De Viajes</h2>
     </div>
 </div>
 <?php foreach ($productos as $producto) { ?>

@@ -20,7 +20,7 @@ if (count($productos) <= 0) {
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Todavía no hay productos, seleccione un destino!!
+                    Todavía no hay viajes, seleccione un destino!!
                 </h1>
                 <h2 class="subtitle">
                     Visita la tienda para agregar productos a tu carrito
