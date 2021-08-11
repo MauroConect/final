@@ -83,13 +83,13 @@ if (count($productos) <= 0) {
     </div>
 <?php } ?>
 
-<p>seleccione un dia para obtener su certificado</p>
+
 <div class="container-fluid px-1 px-sm-5 mx-auto">
     <div class="row d-flex justify-content-sm-center px-2">
         <form autocomplete="off" action="guardarfecha.php" method="post">
-        <td><input action="guardarfecha.php" method="post" type="number" name="cantidad1" placeholder="Ingrese cantidad de tickets adultos"></td>
-        <td><input action="guardarfecha.php" method="post" type="number" name="cantidad2" placeholder="ingrese cantidad de tickets para niños"></td>
-            <div class="form-group row"> <input type="text" id="dp1" class="datepicker mr-2" placeholder="Ingrese la fecha que va a usar el certificado" name="date"><br> <button type="submit" class="btn btn-success">Guardar certificado y finalizar compra</button> </div>
+        <td>Ingrese Cantidad de Adultos<input action="guardarfecha.php" method="post" type="number" name="cantidad1" placeholder="Ingrese cantidad de tickets adultos"></td>
+        <td>Ingrese Cantidad de niños<input action="guardarfecha.php" method="post" type="number" name="cantidad2" placeholder="ingrese cantidad de tickets para niños"></td>
+            <div class="form-group row">Seleccione el dia de su viaje<input type="text" id="dp1" class="datepicker mr-2" placeholder="Ingrese la fecha que va a usar el certificado" name="date"><br> <button type="submit" class="btn btn-success">Guardar certificado y finalizar compra</button> </div>
         </form>
     </div>
 </div>
