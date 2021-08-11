@@ -22,7 +22,7 @@ $numero2 = $_POST ['pass2'];
 //}
 
 
-//comprobar que las claves sean iguales
+//comprobar que las claves sean iguales y crear sesion
 
 if ($numero1===$numero2) {
 

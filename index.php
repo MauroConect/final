@@ -163,6 +163,11 @@ include 'includes/carrousel.php';
                     </div>
                 </div>
             </div>
+
+            <div>
+                <p>Ya tienes cuenta? <a a href ="login.php">inicia sesion</a></p>
+            </div>
+
             <div class="col-12">
                 <button class="btn btn-primary" type="submit">Registrarse</button>
             </div>

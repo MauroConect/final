@@ -27,7 +27,7 @@ function quitarProductoDelCarrito($idProducto)
 }
 
 
-//function guardarDia(){
+//function guardarDia(){  no funca
     //$bd = obtenerConexion();
     //$sentencia = $bd->prepare("INSERT INTO fecha(id, dia,) VALUES(?, ?)");
     //return $sentencia->execute([$nombre, $precio, $descripcion])
@@ -117,7 +117,7 @@ function obtenerConexion()
     $database->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     return $database;
 }
-
+//conexion 2 
 function crearUsuario ()
 {
     $conex = mysqli_connect("localhost","root","","tienda"); 
