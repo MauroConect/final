@@ -59,7 +59,7 @@ padding-top: 5px;
         }
 
         
-        }
+    
 
  
         .titulo {
@@ -69,7 +69,7 @@ padding-top: 5px;
             line-height: 20px;
         }
         
-        }
+        
         header{
             width: 100%;
             color: #fff;
@@ -87,7 +87,7 @@ padding-top: 5px;
             font-size: 55px;
         }
         
-        }
+
         .registro-box{
             background-image:url(img/fondologin.jpg);
             width: 100px;
@@ -98,3 +98,23 @@ padding-top: 5px;
             left: calc(50% - 50px);
         }
         
+
+        .alerta{
+            text-align: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #1e6;
+            color: #fff 
+        }
+
+
+        .lugar {
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+            color: rgb(206, 203, 203);
+            line-height: 20px;
+        }
+        
+
+     

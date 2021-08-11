@@ -5,9 +5,11 @@ if (!isset($_POST["date"])) {
     exit("no selecciono un dia valido");
 }
 $dia = $_POST ['date'];
-
-echo '<p>su certificado esta disponible hasta el dia</p>';
-echo ($dia);
+?>
+<h1 class="ok">Usted Puede viajar el dia : <?php echo($dia) ?></h1>
+<?php
+echo "<br>";
+echo "<br>";
 
 ?>
 
@@ -20,30 +22,77 @@ $niños = $_POST['cantidad2'];
 
 
 $productos = obtenerProductosEnCarrito();?>
-<p>Usted está autorizado para recorrer los siguientes con las siguientes actividades</p>
+<p class="ok">Usted está autorizado para recorrer los siguientes el siguiente destino<?php echo '<pre>'; print_r($productos); echo '</pre>'; ?></p>
 <?php
-$total=$productos;
-
-var_dump($total);
 
 
 
 ?>
+
+
+
+
 <br>
 <br>
 <?php
+$total = 0;
 
-                 
+foreach ($productos as $producto) {
 
-var_dump ($adultos,$niños);
+    $total += $producto->precio;}
+    echo "usted selecciono un viaje de : $$total";
+    echo "<br>";
+    echo "<br>";
+    echo "<hr>";
+    echo "recargo total en tickets de adultos $";
+    echo "<br>";
+    echo number_format($totaladultos=$producto->precio*$adultos, 2);
+    echo "<br>";
+    echo "<hr>";
+    echo "recargo total en tickets de niños";
+    echo "<br>";
+    
+    
+
+    $operacion = $total*$niños;
+    $porcentaje = $total*$niños*0.25; 
+    $final = $operacion-$porcentaje;
+    echo "$final";
+    echo "<br>";
+    echo "<br>";
+
+    $resultadofinal=$final+$totaladultos;
+
+    echo "el monto total a pagar en tickets es igual a $ $resultadofinal";
+
+
+    echo "<br>";
+    echo "<br>";
+
+
+echo "cantidad de tickets para adulto y niño";
+echo "<br>";
+echo "$adultos de adultos <br> $niños de niño";
+echo "<br>";
+
+
+calcularDia();
 
 
 ?>
-
-
 <?php
-echo "<p>recuerde que tiene un 25% de descuento los dias lunes y martes</p>";
-calcularExtra($dia);
+$day = date("l");
+if ($day=="Tuesday"){
+$totalfinal=$resultadofinal*0.15;
+$totaltotal=$resultadofinal-$totalfinal;
+echo "  $totaltotal";    
+}
 
 ?>
+<?php
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
 

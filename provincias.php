@@ -18,7 +18,6 @@
     session_start();
     include ('includes/nav.php');
     include_once "funciones.php";
-    include_once "funciones.php";
 $productos = obtenerProductos();
     ?>
 
@@ -38,7 +37,7 @@ $productos = obtenerProductos();
     <li class="list-group-item">Certificado exclusivo</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Ver mas</a>
+    <a href="buenosaires.php" class="card-link">Ver mas</a>
   </div>
 </div>
     </div>
@@ -55,7 +54,7 @@ $productos = obtenerProductos();
     <li class="list-group-item">A third item</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Ver mas</a>
+    <a href="guamini.php" class="card-link">Ver mas</a>
   </div>
 </div>
     </div>
@@ -72,7 +71,7 @@ $productos = obtenerProductos();
     <li class="list-group-item">A third item</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Ver mas</a>
+    <a href="cordoba.php" class="card-link">Ver mas</a>
   </div>
 </div>
     </div>

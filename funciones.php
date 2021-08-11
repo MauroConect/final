@@ -136,10 +136,10 @@ switch ($day) {
            echo "Hoy es domingo";
     break;
     case "Monday":
-           echo "Hoy es lunes";
+           echo "Hoy es lunes usted tiene un 15% de descuento adicional";
     break;
     case "Tuesday":
-           echo "Hoy es martes";
+           echo "Hoy es martes Usted Tiene un 15% de descuento adicional";
     break;
     case "Wednesday":
            echo "Hoy es miércoles";
@@ -156,32 +156,3 @@ switch ($day) {
 }
 
 }
-
-//Funcion para calcular el dia
-function calcularExtra(){
-    $day = date("l");
-    switch ($day) {
-        case "Sunday":
-               echo "Hoy es domingo" ;
-        break;
-        case "Monday":
-               echo "Hoy es lunes tiene recargo";
-        break;
-        case "Tuesday":
-            echo "Hoy es martes tiene recargo";
-        break;
-        case "Wednesday":
-               echo "Hoy es miércoles";
-        break;
-        case "Thursday":
-               echo "Hoy es jueves";
-        break;
-        case "Friday":
-            echo    "Hoy es viernes";
-        break;
-        case "Saturday":
-               echo "Hoy es sábado";
-        break;
-    }
-    
-    }

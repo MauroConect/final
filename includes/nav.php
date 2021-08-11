@@ -31,9 +31,18 @@
                 <span aria-hidden="true"></span>
             </button>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-item">
             <div class="navbar-start">
-                <a class="navbar-item" href="provincias.php">Lugares</a>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="provincias.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lugares
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="guamini.php">Guamini</a></li>
+            <li><a class="dropdown-item" href="buenosaires.php">Buenos Aires</a></li>
+            <li><a class="dropdown-item" href="cordoba.php">Cordoba</a></li>
+          </ul>
+        </li>
                 <a class="navbar-item" href="tienda.php">Servicios</a>
             </div>
             <div class="navbar-end">

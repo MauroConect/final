@@ -82,10 +82,7 @@ if (count($productos) <= 0) {
         </div>
     </div>
 <?php } ?>
-<?php
-calcularExtra();
 
-?>
 <p>seleccione un dia para obtener su certificado</p>
 <div class="container-fluid px-1 px-sm-5 mx-auto">
     <div class="row d-flex justify-content-sm-center px-2">
