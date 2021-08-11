@@ -22,7 +22,7 @@ $niños = $_POST['cantidad2'];
 
 
 $productos = obtenerProductosEnCarrito();?>
-<p class="ok">Usted está autorizado para recorrer los siguientes el siguiente destino<?php echo '<pre>'; print_r($productos); echo '</pre>'; ?></p>
+<p class="ok">Usted está autorizado para recorrer  el siguiente destino con los siguientes servicios y aranceles<?php echo '<pre>'; print_r($productos); echo '</pre>'; ?></p>
 <?php
 
 
@@ -62,8 +62,11 @@ foreach ($productos as $producto) {
     echo "<br>";
 
     $resultadofinal=$final+$totaladultos;
+    ?>
+    <h1 class="ok">El monto a pagar es igual a  : $<?php echo($resultadofinal) ?></h1>
+    <?php
 
-    echo "el monto total a pagar en tickets es igual a $ $resultadofinal";
+    //echo "el monto total a pagar en tickets es igual a $ $resultadofinal";
 
 
     echo "<br>";
@@ -74,10 +77,12 @@ echo "cantidad de tickets para adulto y niño";
 echo "<br>";
 echo "$adultos de adultos <br> $niños de niño";
 echo "<br>";
+echo "<br>";
 
 
 calcularDia();
-
+echo "<br>";
+echo "<br>";
 
 ?>
 <?php
@@ -86,6 +91,17 @@ if ($day=="Tuesday"){
 $totalfinal=$resultadofinal*0.15;
 $totaltotal=$resultadofinal-$totalfinal;
 echo "  $totaltotal";    
+}
+echo "<br>";
+$day = date("l");
+if ($day=="Monday"){
+$totalfinal=$resultadofinal*0.15;
+$totaltotal=$resultadofinal-$totalfinal;
+echo "  $totaltotal";    
+}
+
+else {
+    echo "al no tener descuento  el total a pagar es de: $$resultadofinal";
 }
 
 ?>

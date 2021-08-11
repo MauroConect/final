@@ -128,7 +128,7 @@ function calcularDia(){
 $day = date("l");
 switch ($day) {
     case "Sunday":
-           echo "Hoy es domingo";
+           echo "Hoy es domingo no tiene descuento";
     break;
     case "Monday":
            echo "Hoy es lunes usted tiene un 15% de descuento adicional";
@@ -137,16 +137,16 @@ switch ($day) {
            echo "Hoy es martes Usted Tiene un 15% de descuento adicional";
     break;
     case "Wednesday":
-           echo "Hoy es miércoles";
+           echo "Hoy es miércoles no tiene descuento";
     break;
     case "Thursday":
-           echo "Hoy es jueves";
+           echo "Hoy es jueves no tiene descuento";
     break;
     case "Friday":
-           echo "Hoy es viernes";
+           echo "Hoy es viernes no tiene descuento";
     break;
     case "Saturday":
-           echo "Hoy es sábado";
+           echo "Hoy es sábado no tiene decuento";
     break;
 }
 
