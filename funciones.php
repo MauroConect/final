@@ -84,12 +84,7 @@ function eliminarProducto($id)
     return $sentencia->execute([$id]);
 }
 
-function guardarProducto($nombre, $precio, $descripcion)
-{
-    $bd = obtenerConexion();
-    $sentencia = $bd->prepare("INSERT INTO productos(nombre, precio, descripcion) VALUES(?, ?, ?)");
-    return $sentencia->execute([$nombre, $precio, $descripcion]);
-}
+
 
 function obtenerVariableDelEntorno($key)
 {
