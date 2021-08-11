@@ -40,16 +40,13 @@ $total = 0;
 foreach ($productos as $producto) {
 
     $total += $producto->precio;}
-    echo "usted selecciono un viaje de : $$total";
     echo "<br>";
-    echo "<br>";
-    echo "<hr>";
-    echo "recargo total en tickets de adultos $";
+    echo "recargo por  tickets de adultos ";
     echo "<br>";
     echo number_format($totaladultos=$producto->precio*$adultos, 2);
     echo "<br>";
     echo "<hr>";
-    echo "recargo total en tickets de niños";
+    echo "recargo por tickets de niños";
     echo "<br>";
     
     
@@ -57,7 +54,14 @@ foreach ($productos as $producto) {
     $operacion = $total*$niños;
     $porcentaje = $total*$niños*0.25; 
     $final = $operacion-$porcentaje;
-    echo "$final";
+    echo "$$final";
+    echo "<br>";
+    echo "<br>";
+
+    echo "cantidad de tickets  adulto y niño";
+    echo "<br>";
+    echo "$adultos de adultos <br> $niños de niño";
+    echo "<br>";
     echo "<br>";
     echo "<br>";
 
@@ -68,18 +72,13 @@ foreach ($productos as $producto) {
 
     //echo "el monto total a pagar en tickets es igual a $ $resultadofinal";
 
-
+    
     echo "<br>";
-    echo "<br>";
 
 
-echo "cantidad de tickets para adulto y niño";
-echo "<br>";
-echo "$adultos de adultos <br> $niños de niño";
-echo "<br>";
-echo "<br>";
 
 
+//funcion que calcula el Dia actual
 calcularDia();
 echo "<br>";
 echo "<br>";
