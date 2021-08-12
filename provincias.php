@@ -24,13 +24,13 @@
 	  //$_SESSION['usuario']=$usuario;
     //echo "$usuario";
     ?>
-    <div class="avatar">
+    
       <?php
-	    $usuario=$_SESSION['usuario'];
+	    
 
       $productos = obtenerProductos();
       ?>
-    </div>
+    
     
 
 <!--Columnas-->
@@ -41,7 +41,7 @@
   <img src="img/buenosaires.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Buenos Aires</h5>
-    <p class="card-text">Certificado para viajar a la principal ciudad de argentina, podes pagar en 12 cuotas sin interes, elegi dos servicios adicionales para niño y adultos</p>
+    <p class="card-text">Certificado para viajar a la principal ciudad de argentina, podes pagar en 12 cuotas sin interes.</p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Buenos Aires</li>
@@ -61,9 +61,9 @@
     <p class="card-text">Certificado para viajar a la principal ciudad de argentina, podes pagar en 12 cuotas sin interes</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">Paseo por lago del monte</li>
+    <li class="list-group-item">visita lugares historicos</li>
+    <li class="list-group-item">mucha paz y tranquilidad</li>
   </ul>
   <div class="card-body">
     <a href="guamini.php" class="card-link">Ver mas</a>
@@ -78,9 +78,9 @@
     <p class="card-text">Certificado para viajar a la principal ciudad de argentina, podes pagar en 12 cuotas sin interes</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">Los mejores restaurantes</li>
+    <li class="list-group-item">La mejor comida</li>
+    <li class="list-group-item">Lugares unicos</li>
   </ul>
   <div class="card-body">
     <a href="cordoba.php" class="card-link">Ver mas</a>

@@ -92,6 +92,7 @@ $totaltotal=$resultadofinal-$totalfinal;
 echo "  $totaltotal";    
 }
 echo "<br>";
+
 $day = date("l");
 if ($day=="Monday"){
 $totalfinal=$resultadofinal*0.15;
@@ -100,7 +101,7 @@ echo "  $totaltotal";
 }
 
 else {
-    echo "al no tener descuento  el total a pagar es de: $$resultadofinal";
+    echo "hoy no tiene descuento  el total a pagar es de: $$resultadofinal";
 }
 
 ?>
