@@ -25,11 +25,7 @@
             <a class="navbar-item" href="index.php">
                 TusVacaciones
             </a>
-            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </button>
+           
         </div>
         <div class="navbar-item">
             <div class="navbar-start">
