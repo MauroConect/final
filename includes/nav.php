@@ -25,11 +25,7 @@
             <a class="navbar-item" href="index.php">
                 TusVacaciones
             </a>
-            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </button>
+           
         </div>
         <div class="navbar-item">
             <div class="navbar-start">
@@ -61,6 +57,8 @@
                         </a>
                     </div>
                 </div>
+
+
                 <div class="navbar-item">
                     <!---->
 
@@ -75,17 +73,17 @@
                 
 
                 <li class="text-light d-flex my-auto">
-                    <div id="circle" class="mt-2 mr-2"></div>
+                    <div id="circle" class="mt-2 mr-2" class="buttons"></div>
                     <?php echo ucwords($_SESSION['usuario']);?>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cerrar.php"> salir</a>
+                <li class="nav-item" >
+                    <a class="buttons" href="cerrar.php"> salir</a>
                 </li>
                 <!---->
-                    <div class="buttons">
+                    <!--<div class="buttons">
                         <a rel="noreferrer" href="login.php" class="button is-primary">
                             <strong>Login</strong>
-                        </a>
+                        </a>-->
                     </div>
                 </div>
             </div>
