@@ -61,6 +61,8 @@
                         </a>
                     </div>
                 </div>
+
+
                 <div class="navbar-item">
                     <!---->
 
@@ -75,17 +77,17 @@
                 
 
                 <li class="text-light d-flex my-auto">
-                    <div id="circle" class="mt-2 mr-2"></div>
+                    <div id="circle" class="mt-2 mr-2" class="buttons"></div>
                     <?php echo ucwords($_SESSION['usuario']);?>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cerrar.php"> salir</a>
+                <li class="nav-item" >
+                    <a class="buttons" href="cerrar.php"> salir</a>
                 </li>
                 <!---->
-                    <div class="buttons">
+                    <!--<div class="buttons">
                         <a rel="noreferrer" href="login.php" class="button is-primary">
                             <strong>Login</strong>
-                        </a>
+                        </a>-->
                     </div>
                 </div>
             </div>
