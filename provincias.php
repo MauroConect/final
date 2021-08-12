@@ -15,11 +15,23 @@
     <?php
 
     
-    session_start();
+    
+
+	  include 'includes/db.php';
     include ('includes/nav.php');
     include_once "funciones.php";
-$productos = obtenerProductos();
+    //$usuario="SELECT*From usuarios where usuario ='$usuario'";
+	  //$_SESSION['usuario']=$usuario;
+    //echo "$usuario";
     ?>
+    <div class="avatar">
+      <?php
+	    $usuario=$_SESSION['usuario'];
+
+      $productos = obtenerProductos();
+      ?>
+    </div>
+    
 
 <!--Columnas-->
 <div class="container">

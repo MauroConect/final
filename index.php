@@ -6,8 +6,32 @@
 <body>
     <!--Codigo nav-->
     <?php
-    include ('includes/nav.php');
+    include ('includes/nav2.php');
+    
     ?>
+
+
+<nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.php">
+                TusVacaciones
+            </a>
+            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        
+                    <div class="buttons">
+                        <a rel="noreferrer" href="login.php" class="button is-primary">
+                            <strong>Login</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 <!--codigo carrousel-->
 

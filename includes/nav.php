@@ -41,10 +41,12 @@
             <li><a class="dropdown-item" href="guamini.php">Guamini</a></li>
             <li><a class="dropdown-item" href="buenosaires.php">Buenos Aires</a></li>
             <li><a class="dropdown-item" href="cordoba.php">Cordoba</a></li>
+            
           </ul>
         </li>
                 <a class="navbar-item" href="tienda.php">Servicios</a>
             </div>
+            
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
@@ -60,6 +62,26 @@
                     </div>
                 </div>
                 <div class="navbar-item">
+                    <!---->
+
+     <style>
+            #circle{
+            width: 10px;
+            height:10px;
+            border-radius:50%;
+            background:#2ded04;
+            }
+    </style>
+                
+
+                <li class="text-light d-flex my-auto">
+                    <div id="circle" class="mt-2 mr-2"></div>
+                    <?php echo ucwords($_SESSION['usuario']);?>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cerrar.php"> salir</a>
+                </li>
+                <!---->
                     <div class="buttons">
                         <a rel="noreferrer" href="login.php" class="button is-primary">
                             <strong>Login</strong>
